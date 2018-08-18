@@ -7,4 +7,6 @@ suppressPackageStartupMessages({
   if (!(require(stringr))) {install.packages("stringr")};  library(stringr)
   if (!(require(tibble))) {install.packages("tibble")};  library(tibble)
   if (!(require(pdftools))) {install.packages("pdftools")};  library(pdftools)
+  if (!(require(quanteda))) {install.packages("quanteda")};  library(quanteda)
+  if (!(require(DT))) {install.packages("DT")};  library(DT)  
 })
