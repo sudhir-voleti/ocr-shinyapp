@@ -1,0 +1,10 @@
+if (!require(shiny)){install.packages("shiny")}; library(shiny)
+suppressPackageStartupMessages({   
+  # load libraries including tesseract for OCR
+  if (!(require(tesseract))) {install.packages("tesseract")};  library(tesseract)
+  if (!(require(Hmisc))) {install.packages("Hmisc")};  library(Hmisc)
+  if (!(require(xml2))) {install.packages("xml2")};  library(xml2)
+  if (!(require(stringr))) {install.packages("stringr")};  library(stringr)
+  if (!(require(tibble))) {install.packages("tibble")};  library(tibble)
+  if (!(require(pdftools))) {install.packages("pdftools")};  library(pdftools)
+})
