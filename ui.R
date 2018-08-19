@@ -48,15 +48,15 @@ shinyUI(fluidPage(
 
                          h4(p("What this shiny app does")),
                          br(),
-                         p("This shiny app does OCR - Optical Character Recognition - by trying to convert alphanumeric text in images, i.e. optical characters, into regular soft copy text.")
-                         p("The Optical Recognition part happens via a trained model in Google's Tesseract OCR engine accessed by R's tesseRact package.")
-                         p("The app's backend workflow takes an input an image URL, binarizes the image, passes it through tesseract and finally outputs usable soft-copy text. All this backend processing happens in the background and (ideally) requires no user intervention whatsoever.")
+                         p("This shiny app does OCR - Optical Character Recognition - by trying to convert alphanumeric text in images, i.e. optical characters, into regular soft copy text."),
+                         p("The Optical Recognition part happens via a trained model in Google's Tesseract OCR engine accessed by R's tesseRact package."),
+                         p("The app's backend workflow takes an input an image URL, binarizes the image, passes it through tesseract and finally outputs usable soft-copy text. All this backend processing happens in the background and (ideally) requires no user intervention whatsoever."),
                          br(),
 
                          h4(p("How to use this shiny application")),
                          br(),
-                         p("This app require one data input from the user, viz. an image file containing printed text. Click on the Browse (in left side-bar panel) and upload the input file.")
-                         p("Note that right now the app works only on standard image files and has an upper limit of 5MB. The clearer the image, the bigger the font, the greater the contrast (ideally white background and black font), the better the results' quality.") 
+                         p("This app require one data input from the user, viz. an image file containing printed text. Click on the Browse (in left side-bar panel) and upload the input file."),
+                         p("Note that right now the app works only on standard image files and has an upper limit of 5MB. The clearer the image, the bigger the font, the greater the contrast (ideally white background and black font), the better the results' quality."),
                          br(),
 
                          h4(p("Download Sample Input Files")),
