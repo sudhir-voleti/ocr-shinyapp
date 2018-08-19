@@ -32,14 +32,14 @@ shinyServer(function(input, output, session) {
     Extext
   })
   
-  output$intro <- renderUI({
-    list(
-      img(SRC="ocrplaatje.jpg"),
-      h4("This shiny app uses the tesseract R package to perform OCR on an uploaded image."), 
-      h4("The extracted text is then used to form a wordcloud image, (English) stopwords can be removed"),
-      h4("If no image is selected a default ocr test image is used. The R source can be found on my ", a("github", href="https://github.com/longhowlam/OCRinShiny")),
-      h4("Cheers, Longhow")
-    )
+#  output$intro <- renderUI({
+#    list(
+#      img(SRC="ocrplaatje.jpg"),
+#      h4("This shiny app uses the tesseract R package to perform OCR on an uploaded image."), 
+#      h4("The extracted text is then used to form a wordcloud image, (English) stopwords can be removed"),
+#      h4("If no image is selected a default ocr test image is used. The R source can be found on my ", a("github", href="https://github.com/longhowlam/OCRinShiny")),
+#      h4("Cheers, Longhow")
+#    )
     
   })
   
@@ -73,20 +73,20 @@ shinyServer(function(input, output, session) {
     cat(extractedText())
   })
   
-  output$sentences = renderDataTable({
+#  output$sentences = renderDataTable({
     
-    text = extractedText()
-    tmp = tokenize(text, what = "sentence")
-    DT::datatable(  
-      data.frame(
-        sentence = 1:length(tmp[[1]]),
-        text = tmp[[1]]
-      ),
-      rownames = FALSE
+#    text = extractedText()
+#    tmp = tokenize(text, what = "sentence")
+#    DT::datatable(  
+#      data.frame(
+#        sentence = 1:length(tmp[[1]]),
+#        text = tmp[[1]]
+#      ),
+#      rownames = FALSE
       
-    )
+#    )
     
-  })
+#  })
   
   
   output$cloud = renderPlot({
