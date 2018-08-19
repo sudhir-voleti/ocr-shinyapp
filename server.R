@@ -112,8 +112,8 @@ shinyServer(function(input, output, session) {
   
     output$downloadData <- downloadHandler(
          filename = function() { "test-text.png" },
-         content = function(file) {
-         download.file("data/test-text.png", destfile=file.choose())
+         content = function(url) {
+         download.file(url="data/test-text.png", destfile=file.choose())
                                    }
     )
     
