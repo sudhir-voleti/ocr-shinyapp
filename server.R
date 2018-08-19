@@ -111,9 +111,10 @@ shinyServer(function(input, output, session) {
   })
   
     output$downloadData <- downloadHandler(
-         filename = function() { "test-text.png" },
-         content = function(file) {
-         png("data/test-text.png")
-                                   })
+         filename = function() { "test-text.png" }
+    #     content = function(file) {
+    #     png("data/test-text.png")
+    #                               }
+    )
     
 })
