@@ -108,9 +108,13 @@ shinyServer(function(input, output, session) {
       random.order = FALSE,
       colors = pal
     )
-    
+        
   })
   
-  
-  
+    output$downloadData <- downloadHandler(
+         filename = function() { "the-nutritional-label.jpg" },
+         content = function(file) {
+         write.csv(read.csv("data/the-nutritional-label.jpg"), file, row.names=F, col.names=F)
+                                   })
+    
 })
