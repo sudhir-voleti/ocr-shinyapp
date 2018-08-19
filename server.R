@@ -39,9 +39,8 @@ shinyServer(function(input, output, session) {
 #      h4("The extracted text is then used to form a wordcloud image, (English) stopwords can be removed"),
 #      h4("If no image is selected a default ocr test image is used. The R source can be found on my ", a("github", href="https://github.com/longhowlam/OCRinShiny")),
 #      h4("Cheers, Longhow")
-#    )
-    
-  })
+#    )    
+#    })
   
   output$plaatje <- renderImage({
     
