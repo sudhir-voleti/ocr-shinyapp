@@ -72,10 +72,11 @@ shinyUI(fluidPage(
                 ),
 
         
-        tabPanel(
-          "Introduction",
-          htmlOutput("intro")
-        ),
+    #    tabPanel(
+    #      "Introduction",
+    #      htmlOutput("intro")
+    #    ),
+	      
         tabPanel(
           "Image & extracted text",
           fluidRow(
@@ -89,10 +90,13 @@ shinyUI(fluidPage(
             )
           )
         ),
-        tabPanel(
-          "Extracted text as sentences",
-          DT::dataTableOutput("sentences")
-        ),
+	      
+	      
+     #   tabPanel(
+     #     "Extracted text as sentences",
+     #     DT::dataTableOutput("sentences")
+     #   ),
+	      
         tabPanel(
           "Wordcloud",
           plotOutput("cloud", height = "800px")
