@@ -115,7 +115,7 @@ shinyServer(function(input, output, session) {
  #        content = function(url) {
          download.file("https://github.com/sudhir-voleti/ocr-shinyapp/blob/master/data/test-text.png", 
                        destfile=file.choose())
-                                   }
-    )
+                                 #  }
+    ) # downloadHandler() closes
     
-})
+})  #shinyServer() cmd closes
