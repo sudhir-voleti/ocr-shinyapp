@@ -23,6 +23,7 @@ library(tm)
 library(RColorBrewer)
 library(quanteda)
 library(DT)
+library(koRpus)
 
 shinyUI(fluidPage(
   
