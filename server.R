@@ -113,7 +113,8 @@ shinyServer(function(input, output, session) {
     output$downloadData <- downloadHandler(
  #        filename = function() { "test-text.png" },
  #        content = function(url) {
-         download.file("data/test-text.png", destfile=file.choose())
+         download.file("https://github.com/sudhir-voleti/ocr-shinyapp/blob/master/data/test-text.png", 
+                       destfile=file.choose())
                                    }
     )
     
