@@ -27,8 +27,8 @@ library(DT)
 shinyUI(fluidPage(
   
   # Application title
-  titlePanel("A simple OCR app - Optical Character Recognition"),
-  
+ # titlePanel("A simple OCR app - Optical Character Recognition"),
+  titlePanel(title=div(img(src="logo.png",align='right'),"A simple OCR app - Optical Character Recognition")),
   sidebarLayout(
     sidebarPanel(width = 3,
       
