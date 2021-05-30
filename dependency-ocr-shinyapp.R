@@ -9,4 +9,7 @@ suppressPackageStartupMessages({
   if (!(require(pdftools))) {install.packages("pdftools")};  library(pdftools)
   if (!(require(quanteda))) {install.packages("quanteda")};  library(quanteda)
   if (!(require(DT))) {install.packages("DT")};  library(DT)  
+  if (!(require(wordcloud))) {install.packages("wordcloud")};  library(wordcloud)  
+  if (!(require(tm))) {install.packages("tm")};  library(tm)  
+
 })
