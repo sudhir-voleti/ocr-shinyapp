@@ -11,5 +11,5 @@ suppressPackageStartupMessages({
   if (!(require(DT))) {install.packages("DT")};  library(DT)  
   if (!(require(wordcloud))) {install.packages("wordcloud")};  library(wordcloud)  
   if (!(require(tm))) {install.packages("tm")};  library(tm)  
-
+  if (!(require(jpeg))) {install.packages("jpeg")};  library(jpeg)  
 })
